@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: var(--heading-font-family) ;
 }
 
@@ -45,11 +45,12 @@ h2 {
     line-height: 5.6rem;
 }
 h3 {
-    font-size: 4.4rem;
-    line-height: 5.6rem;
+    font-size: 4rem;
+    
 
 }
 h4 {
+    font-size: 1.3rem;
 
 }
 
@@ -81,7 +82,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.dark bg {
+.dark-bg {
     background-color: var(--gray-bg);
 
 }
@@ -159,6 +160,38 @@ a:hover {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.1em;
+
+}
+
+/*END WHAT I DO */
+/*START CONTACT */
+.contact-me.form {
+    display:grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 2.5rem;
+
+}
+.contact-me h3 {
+    grid-area: 1/ 1/ 2/ -1;
+}
+
+.contact-me textarea {
+    grid-column: 1/ span 2;
+    height: 79px;
+    border: 0;
     
 }
-/*END WHAT I DO */
+
+.contact-me input [type="text"]:focus,
+.contact-me input [type="email"]:focus,
+.contact-me textarea:focus
+{
+outline: none;
+border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.contact-me 
+
+/*END CONTACT */
